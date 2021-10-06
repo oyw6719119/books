@@ -1,5 +1,5 @@
 ---
-title: 'Vue'
+title: Vue
 description: '这是我的第一个 Vue博客'
 ---
 

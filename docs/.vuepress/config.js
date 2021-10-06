@@ -1,6 +1,9 @@
 module.exports = {
   lang: 'zh-CN',
   base: '/books/',
+  head: [
+    ['link', { rel: 'icon', href: 'https://cn.vuejs.org/images/logo.svg' }],
+  ],
   markdown: {
     toc: {
       level: [4],

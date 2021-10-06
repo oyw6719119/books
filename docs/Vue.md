@@ -1,7 +1,9 @@
 ---
-title: Vue
+
 description: '这是我的第一个 Vue博客'
 ---
+
+# Vue
 
 ### 12 webpack的使用
 

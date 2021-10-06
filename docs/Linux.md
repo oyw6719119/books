@@ -1,4 +1,5 @@
-# Linux云服务器
+# Linux
+## Linux云服务器
 
 简介
 
@@ -10,9 +11,9 @@
 
 [华为云](https://www.runoob.com/linux/linux-cloud-server.html#hw)：领券购买也很划算，[ **直达链接** ](https://activity.huaweicloud.com/cps/recommendstore.html?fromacct=f3797f3d-4da5-4a2f-9149-130ad807c940&utm_source=dGlhbnFpeGlu=&utm_medium=cps&utm_campaign=201905)。
 
-# Linux系统启动过程
+## Linux系统启动过程
 
-## 内核的引导
+### 内核的引导
 
 当计算机打开电源后，首先是BIOS开机自检，按照BIOS中设置的启动设备（通常是硬盘）来启动。
 
@@ -28,7 +29,7 @@ init 程序首先是需要读取配置文件 /etc/inittab。
 
 ![bg2013081703](https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/bg2013081703.png)
 
-### 运行级别
+#### 运行级别
 
 许多程序需要开机启动。它们在Windows叫做"服务"（service），在Linux就叫做"守护进程"（daemon）。
 
@@ -55,9 +56,9 @@ Linux系统有7个运行级别(runlevel)：
 
 
 
-# Linux系统目录结构
+## Linux系统目录结构
 
 ![d0c50-linux2bfile2bsystem2bhierarchy](https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/d0c50-linux2bfile2bsystem2bhierarchy.jpg)
 
-# 文件基本属性
+## 文件基本属性
 

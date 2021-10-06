@@ -1,4 +1,5 @@
 module.exports = {
+  title: '@oyw',
   lang: 'zh-CN',
   base: '/books/',
   head: [

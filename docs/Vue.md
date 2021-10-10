@@ -747,3 +747,38 @@ const User = () => import("@/components/User");
 </template>
 ````
 
+#### 导航守卫
+
+全局守卫，[doc](https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB)
+
+````js
+// 05-learnvuerouter\src\router\index.js
+router.beforeEach((to, from, next) => {
+  //mathched是一个嵌套路由子路由数组，第一个是最上层路由
+  window.document.title = to.matched[0].meta.title;
+  next();
+});
+````
+
+组件缓存
+
+\<keep-alive\>标签
+
+````vue
+// 05-learnvuerouter\src\App.vue
+<keep-alive>
+  <router-view />
+</keep-alive>
+````
+
+````vue
+// 05-learnvuerouter\src\components\About.vue
+<script>
+export default {
+  created() {
+    console.log('about created')
+  },
+}
+</script>
+````
+

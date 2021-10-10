@@ -782,3 +782,112 @@ export default {
 </script>
 ````
 
+#### 10-路径别名
+
+````js
+// 06-tabbar\build\webpack.base.conf.js
+module.exports = {
+	...
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      '@': resolve('src'),
+      'assert': resolve('src/assert')
+    }
+  },
+}
+````
+
+````js
+'@/components/HelloWorld'
+````
+
+### 15 Promise
+
+优雅的异步调用方式
+
+基本使用
+
+````html
+<script>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //两种状态只满足一种
+      // resolve('hello Vue')
+      reject('error message')
+    }, 2000)
+  })
+    .then((data) => {
+    console.log(data)
+  })
+    .catch((err) => {
+    console.log(err)
+  })
+</script>
+````
+
+另一种形式
+
+````html
+<script>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // resolve('hello Vue')
+      reject('error message')
+    }, 2000)
+  }).then(
+    (data) => {
+      console.log(data)
+    },
+    (err) => {
+      console.log(err)
+    }
+  )
+</script>
+````
+
+链式调用
+
+````html
+<script>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('111')
+    }, 2000)
+  })
+    .then((data) => {
+    console.log(data)
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('222')
+      }, 2000)
+    })
+  })
+    .then((data) => {
+    console.log(data)
+  })
+</script>
+````
+
+另一种方式
+
+````html
+<script>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('111')
+    }, 2000)
+  })
+    .then((data) => {
+    console.log(data)
+    return Promise.resolve(data + '222')
+  })
+    .then((data) => {
+    console.log(data)
+  })
+</script>
+````
+
+如果我们希望数据直接包装成Promise.resolve，那么在then中可以直接返回数据
+
+Promise.reject(err) 可以替换成 throw err

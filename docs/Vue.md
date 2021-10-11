@@ -891,3 +891,185 @@ module.exports = {
 如果我们希望数据直接包装成Promise.resolve，那么在then中可以直接返回数据
 
 Promise.reject(err) 可以替换成 throw err
+
+Promise的all方法
+
+````html
+<script>
+  Promise.all([
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('resolve1')
+      }, 2000)
+    }),
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('resolve2')
+      }, 4000)
+    }),
+  ]).then((results) => {
+    console.log(results[0] + results[1])
+  })
+</script>
+````
+
+所有请求都成功时才会执行then里的方法，参数results保存着请求的结果
+
+### 16 Vuex
+
+Vuex 是一个专为 Vue.js 应用程序开发的**状态管理模式**，[doc](https://vuex.vuejs.org/zh/)
+
+#### 01-State
+
+````js
+// 08-learnvuex\src\store\index.js
+import Vue from "vue";
+import Vuex from "vuex";
+
+Vue.use(Vuex);
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+}
+export default store;                             
+````
+
+将store添加到所有的vue事例中
+
+````js
+// 08-learnvuex\src\main.js
+...
+import store from "./store";
+new Vue({
+  el: "#app",
+  store,
+  render: h => h(App)
+});
+````
+
+访问
+
+````vue
+$store.state.count
+````
+
+#### 02-getter
+
+````js
+//
+const store = new Vuex.Store({
+  state: {
+    students: [
+      { id: 110, name: "why", age: 18 },
+      { id: 111, name: "kobe", age: 24 },
+      { id: 112, name: "james", age: 30 },
+      { id: 113, name: "curry", age: 10 }
+    ]
+  },
+  //类似computed
+  getters: {
+    PowerCount(state) {
+      return state.count * state.count;
+    },
+    more20stu(state) {
+      return state.students.filter(s => s.age > 20);
+    },
+    more20stuLength(state, getters) {
+      return getters.more20stu.length;
+    },
+    //返回一个函数，再将调用时传的参传给函数
+    moreAgeStu(state) {	
+      return function(age) {
+        return state.students.filter(s => s.age > age);
+      };
+    }
+  }
+});
+````
+
+#### 03-mutations
+
+````js
+// 08-learnvuex\src\store\index.js
+Vue.use(Vuex);
+const store = new Vuex.Store({
+  state: {
+    info: {
+      name: "kobo",
+      age: 40,
+      height: 1.98
+    }
+  },
+  mutations: {
+    add(state) {
+      state.count++;
+    },
+    sub(state) {
+      state.count--;
+    },
+    addCount(state, count) {
+      state.count += count;
+    },
+    addCount2(state, depload) {
+      state.count += depload.count;
+    },
+    updateInfo(state) {
+      //错误方式
+      // state.info["sex"] = "man";
+      // 页面响应式的刷新
+      // Vue.set(state.info, "sex", "man");
+      Vue.delete(state.info, "name");
+    }
+  },
+});
+export default store;
+````
+
+类型常量
+
+````js
+// 08-learnvuex\src\store\store-config.js
+export const ADD = "add";
+````
+
+````js
+// 08-learnvuex\src\store\index.js
+...
+import { ADD } from "./store-config";
+const store = new Vuex.Store({
+  state: {
+    count: 0,
+  },
+  mutations: {
+    [ADD](state) {
+      state.count++;
+    },
+  },
+});
+export default store;
+````
+
+在组件中使用也是要导入的
+
+````vue
+// 08-learnvuex\src\App.vue
+<template>
+  <div id="app">
+    <h2>{{$store.state.count}}</h2>
+    <button @click="add">+</button>
+  </div>
+</template>
+<script>
+import { ADD } from './store/store-config'
+export default {
+  name: 'App',
+  methods: {
+    add() {
+      this.$store.commit(ADD)
+    },
+  },
+}
+</script>
+````
+

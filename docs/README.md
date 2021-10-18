@@ -12,6 +12,9 @@ sidebar:
   -
     text: '错误收集'
     link: '/errorindex'
+  -
+    text: 'Java'
+    link: '/Java'
 ---
 
 个人博客，随便写写

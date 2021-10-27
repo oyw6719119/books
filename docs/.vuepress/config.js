@@ -16,7 +16,7 @@ module.exports = {
       level: [4],
     },
     extractHeaders: {
-      level: [3, 4, 5],
+      level: [1, 2, 3, 4, 5],
     },
   },
   themeConfig: {

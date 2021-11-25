@@ -75,9 +75,9 @@ public static void test(int a ,String…books);
 
   ① - ② - ③ - ④
 
-## 继承
+### 继承
 
-### 类方法的重写：  
+#### 类方法的重写：  
 
 1. 子类重写的方法必须和父类被重写的方法具有相同的方法名称、参数列表
 2. 子类重写的方法的返回值类型**不能大于**父类被重写的方法的返回值类型
@@ -89,7 +89,7 @@ public static void test(int a ,String…books);
 
 **static的（不是重写）。因为static方法是属于类的，子类无法覆盖父类的方法。**
 
-### super
+#### super
 
 * 子类中所有的构造器默认都会访问父类中空参数的构造器 
 * 当父类中没有空参数的构造器时，子类的构造器必须通过this(参数列表)或者super(参数列表)语句指定调用本类或者父类中相应的
@@ -101,4 +101,45 @@ public static void test(int a ,String…books);
 | 1    | 访问属性   | 访问本类中的属性，如果本类没有此属性则从父类中继续查找 | 直接访问父类中的属性                     |
 | 2    | 调用方法   | 访问本类中的方法，如果本类没有此方法则从父类中继续查找 | 直接访问父类中的方法                     |
 | 3    | 调用构造器 | 调用本类构造器，必须放在构造器的首行                   | 调用父类构造器，必须放在子类构造器的首行 |
+
+#### Object 类
+
+````java
+public void test() {
+	char[] arr = new char[] { 'a', 'b', 'c' };
+	System.out.println(arr);//
+	int[] arr1 = new int[] { 1, 2, 3 };
+	System.out.println(arr1);//
+	double[] arr2 = new double[] { 1.1, 2.2, 3.3 };
+	System.out.println(arr2);//
+}
+````
+
+#### 包装类
+
+````java
+Object o1 = true ? new Integer(1) : new Double(2.0);
+System.out.println(o1);//
+//比较上下两个结果
+Object o2;
+if (true)
+	o2 = new Integer(1);
+else
+	o2 = new Double(2.0);
+System.out.println(o2);//
+````
+
+````java
+public void method1() {
+  Integer i = new Integer(1);
+  Integer j = new Integer(1);
+  System.out.println(i == j);
+  Integer m = 1;
+  Integer n = 1;
+  System.out.println(m == n);//
+  Integer x = 128;
+  Integer y = 128;
+  System.out.println(x == y);//
+}
+````
 

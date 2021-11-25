@@ -15,6 +15,9 @@ sidebar:
   -
     text: 'Java'
     link: '/Java'
+  -
+    text: 'Elasticsearch'
+    link: '/Elasticsearch'
 ---
 
 个人博客，随便写写

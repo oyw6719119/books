@@ -1,5 +1,3 @@
-# SpringMvc
-
 ### @RequestMapping注解的继承问题
 
 在学习openfeign的过程中遇到一个问题：在接口上标识@RequestMapping，implements与extends会发生什么

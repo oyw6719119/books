@@ -4,9 +4,6 @@ sidebar:
     text: 'Vue'
     link: '/Vue'
   -
-    text: 'Linux'
-    link: '/Linux'
-  -
     text: '搭建个人博客'
     link: '/gitbook_build'
   -

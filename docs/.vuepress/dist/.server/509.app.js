@@ -22,10 +22,6 @@ const data = {
         "link": "/Vue"
       },
       {
-        "text": "Linux",
-        "link": "/Linux"
-      },
-      {
         "text": "搭建个人博客",
         "link": "/gitbook_build"
       },
@@ -47,12 +43,12 @@ const data = {
   "headers": [],
   "filePathRelative": "README.md",
   "git": {
-    "updatedTime": 1638154926000,
+    "updatedTime": 1638320503000,
     "contributors": [
       {
         "name": "oyw6719119",
         "email": "1254691710@qq.com",
-        "commits": 5
+        "commits": 6
       }
     ]
   }

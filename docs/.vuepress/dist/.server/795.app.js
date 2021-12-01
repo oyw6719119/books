@@ -46,8 +46,14 @@ const data = {
   ],
   "filePathRelative": "ErrorCollect.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1638320503000,
+    "contributors": [
+      {
+        "name": "oyw6719119",
+        "email": "1254691710@qq.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

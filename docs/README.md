@@ -5,7 +5,7 @@ sidebar:
     link: '/Vue'
   -
     text: '博客搭建'
-    link: '/BlodBuild'
+    link: '/BlogBuild'
   -
     text: '错误收集'
     link: '/ErrorCollect'

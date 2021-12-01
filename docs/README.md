@@ -4,14 +4,11 @@ sidebar:
     text: 'Vue'
     link: '/Vue'
   -
-    text: '搭建个人博客'
-    link: '/gitbook_build'
+    text: '博客搭建'
+    link: '/BlodBuild'
   -
-    text: 'Java'
-    link: '/Java'
-  -
-    text: 'SpringMVC'
-    link: '/SpringMVC'
+    text: '错误收集'
+    link: '/ErrorCollect'
 ---
 
 个人博客，随便写写

@@ -30,7 +30,7 @@ vue与vue-template-compiler版本不一致，重装
 'parent.relativePath' of POM xxx, please verify your project structure
 ````
 
-要解决这个问题的方法也很简单，在parent标签下添加一个<relativePath/>标签即可。[参考](https://blog.csdn.net/qq_45193304/article/details/108092077)
+要解决这个问题的方法也很简单，在parent标签下添加一个\<relativePath/\>标签即可。[参考](https://blog.csdn.net/qq_45193304/article/details/108092077)
 
 ````xml
 <parent>

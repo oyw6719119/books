@@ -1,4 +1,6 @@
-### 教程
+# GitBook
+
+## 教程
 
 [打造完美写作系统：Gitbook+Github Pages+Github Actions](https://www.cnblogs.com/phyger/p/14035937.html#ghpages_681)
 
@@ -38,7 +40,7 @@
 
 [CDN加速GitHub搭配PicGo自建图床，Typora使用起来太爽了](https://blog.csdn.net/wkc1996/article/details/119458835)
 
-### 插件篇
+## 插件篇
 
 [插件整理](https://www.cnblogs.com/mingyue5826/p/10307051.html#214-%E7%94%9F%E6%88%90%E9%A1%B5%E5%86%85%E7%9B%AE%E5%BD%95)
 
@@ -157,3 +159,19 @@ copyButtons: false 表示关闭复制按钮
     }
 }
 ````
+
+# VuePress
+
+## 错误收集
+
+### 严格的html语法检查
+
+````bash
+ Invalid value used as weak map key
+````
+
+vuepress2.x 是基于 Vue3.x开发，相比  Vuepress1.x 对 html 的使用更严格。如下图所示的非标准 html 标签在开发阶段没问题，编译却无法通过。具体错误位置
+
+![image-20211201101343002](https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/202112011013498.png)
+
+这是一个xml标签，我要求它以普通文本的形式展现，所以要加“\”转义尖括号

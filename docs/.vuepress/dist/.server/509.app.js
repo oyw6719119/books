@@ -26,10 +26,6 @@ const data = {
         "link": "/gitbook_build"
       },
       {
-        "text": "错误收集",
-        "link": "/ErrorCollect"
-      },
-      {
         "text": "Java",
         "link": "/Java"
       },

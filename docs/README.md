@@ -7,9 +7,6 @@ sidebar:
     text: '搭建个人博客'
     link: '/gitbook_build'
   -
-    text: '错误收集'
-    link: '/ErrorCollect'
-  -
     text: 'Java'
     link: '/Java'
   -

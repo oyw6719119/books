@@ -20,3 +20,30 @@ vue-loader was used without the corresponding plugin. Make sure to include VueLo
 
 vue与vue-template-compiler版本不一致，重装
 
+
+
+# Maven
+
+### parent标签出现问题
+
+````bash
+'parent.relativePath' of POM xxx, please verify your project structure
+````
+
+要解决这个问题的方法也很简单，在parent标签下添加一个<relativePath/>标签即可。[参考](https://blog.csdn.net/qq_45193304/article/details/108092077)
+
+````xml
+<parent>
+  <groupId>com.xxx.yyy</groupId>
+  <artifactId>xx-yyycommon-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <relativePath/>
+</parent>
+````
+
+### 项目依赖在仓库（本地、远程）中一定有，但在pom文件中依然报错
+
+在idea的maven设置中更新索引
+
+![image-20211130172210912](https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/202111301722404.png)
+

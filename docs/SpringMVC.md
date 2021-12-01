@@ -103,3 +103,7 @@ There is already 'userController' bean method
 ````
 
 从底层源码思考，映射路径与控制器的映射关系在底层是以map形式存在的，key与value是一对一的关系。
+
+包结构：
+
+![](https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/202111291105772.png)

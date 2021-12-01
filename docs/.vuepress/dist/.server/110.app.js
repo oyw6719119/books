@@ -1,15 +1,106 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.26">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/202110181556789.jpg"><title>Java | @oyw</title><meta name="description" content="">
-    <link rel="preload" href="/books/assets/js/runtime~app.a477b22e.js" as="script"><link rel="preload" href="/books/assets/css/styles.dc03f783.css" as="style"><link rel="preload" href="/books/assets/js/812.4a96376e.js" as="script"><link rel="preload" href="/books/assets/js/app.790e7809.js" as="script">
-    <link rel="stylesheet" href="/books/assets/css/styles.dc03f783.css">
-  </head>
-  <body>
-    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/books/" class=""><img class="logo" src="https://cdn.jsdelivr.net/gh/oyw6719119/gitbookpig/202110181556789.jpg" alt="@oyw"><span class="site-name can-hide">@oyw</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a href="/books/" class="nav-link" aria-label="home"><!--[--><!--]--> home <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/books/" class="nav-link" aria-label="home"><!--[--><!--]--> home <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--[--><p class="sidebar-heading sidebar-item">Java</p><ul class=""><li><!--[--><a aria-current="page" href="/books/Java.html#java" class="router-link-active router-link-exact-active nav-link sidebar-item" aria-label="Java"><!--[--><!--]--> Java <!--[--><!--]--></a><ul class="sidebar-sub-items"><li><!--[--><a aria-current="page" href="/books/Java.html#数组" class="router-link-active router-link-exact-active nav-link sidebar-item" aria-label="数组"><!--[--><!--]--> 数组 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/books/Java.html#面向对象" class="router-link-active router-link-exact-active nav-link sidebar-item" aria-label="面向对象"><!--[--><!--]--> 面向对象 <!--[--><!--]--></a><ul class="sidebar-sub-items"><li><!--[--><a aria-current="page" href="/books/Java.html#继承" class="router-link-active router-link-exact-active nav-link sidebar-item" aria-label="继承"><!--[--><!--]--> 继承 <!--[--><!--]--></a><!----><!--]--></li></ul><!--]--></li></ul><!--]--></li></ul><!--]--><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="java" tabindex="-1"><a class="header-anchor" href="#java" aria-hidden="true">#</a> Java</h1><h2 id="数组" tabindex="-1"><a class="header-anchor" href="#数组" aria-hidden="true">#</a> 数组</h2><ul><li>动态初始化：数组声明且为数组元素分配空间与赋值的操作分开进行</li></ul><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> names<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+"use strict";
+exports.id = 110;
+exports.ids = [110];
+exports.modules = {
+
+/***/ 141:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "data": () => (/* binding */ data)
+/* harmony export */ });
+const data = {
+  "key": "v-40ed10fe",
+  "path": "/Java.html",
+  "title": "Java",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 1,
+      "title": "Java",
+      "slug": "java",
+      "children": [
+        {
+          "level": 2,
+          "title": "数组",
+          "slug": "数组",
+          "children": []
+        },
+        {
+          "level": 2,
+          "title": "面向对象",
+          "slug": "面向对象",
+          "children": [
+            {
+              "level": 3,
+              "title": "继承",
+              "slug": "继承",
+              "children": [
+                {
+                  "level": 4,
+                  "title": "类方法的重写：",
+                  "slug": "类方法的重写",
+                  "children": []
+                },
+                {
+                  "level": 4,
+                  "title": "super",
+                  "slug": "super",
+                  "children": []
+                },
+                {
+                  "level": 4,
+                  "title": "Object 类",
+                  "slug": "object-类",
+                  "children": []
+                },
+                {
+                  "level": 4,
+                  "title": "包装类",
+                  "slug": "包装类",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filePathRelative": "Java.md",
+  "git": {
+    "updatedTime": 1637811292000,
+    "contributors": [
+      {
+        "name": "oyw6719119",
+        "email": "1254691710@qq.com",
+        "commits": 3
+      }
+    ]
+  }
+}
+
+
+/***/ }),
+
+/***/ 907:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ Java_html)
+});
+
+;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/@vuepress/bundler-webpack/lib/build/ssr/vuepressLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./docs/.vuepress/.temp/pages/Java.html.vue?vue&type=template&id=d378bb98
+
+function ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1 id="java" tabindex="-1"><a class="header-anchor" href="#java" aria-hidden="true">#</a> Java</h1><h2 id="数组" tabindex="-1"><a class="header-anchor" href="#数组" aria-hidden="true">#</a> 数组</h2><ul><li>动态初始化：数组声明且为数组元素分配空间与赋值的操作分开进行</li></ul><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> names<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 names <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 names<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> “钱学森”<span class="token punctuation">;</span>
 names<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> “邓稼先”<span class="token punctuation">;</span>
@@ -48,7 +139,39 @@ names<span class="token punctuation">[</span><span class="token number">2</span>
   <span class="token class-name">Integer</span> y <span class="token operator">=</span> <span class="token number">128</span><span class="token punctuation">;</span>
   <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x <span class="token operator">==</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><span class="meta-item-info">2021/11/25 上午11:34:52</span></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1254691710@qq.com">oyw6719119</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script src="/books/assets/js/runtime~app.a477b22e.js" defer></script><script src="/books/assets/js/812.4a96376e.js" defer></script><script src="/books/assets/js/app.790e7809.js" defer></script>
-  </body>
-</html>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><!--]-->`)
+}
+// EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
+var exportHelper = __webpack_require__(744);
+;// CONCATENATED MODULE: ./docs/.vuepress/.temp/pages/Java.html.vue
+
+const script = {}
+
+;
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(script, [['ssrRender',ssrRender]])
+
+/* harmony default export */ const Java_html = (__exports__);
+
+/***/ }),
+
+/***/ 744:
+/***/ ((__unused_webpack_module, exports) => {
+
+var __webpack_unused_export__;
+
+__webpack_unused_export__ = ({ value: true });
+// runtime helper for setting properties on components
+// in a tree-shakable way
+exports.Z = (sfc, props) => {
+    for (const [key, val] of props) {
+        sfc[key] = val;
+    }
+    return sfc;
+};
+
+
+/***/ })
+
+};
+;
+//# sourceMappingURL=110.app.js.map

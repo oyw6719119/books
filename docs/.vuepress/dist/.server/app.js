@@ -15,8 +15,8 @@
 const pagesComponents = {
   // path: /Elasticsearch.html
   "v-79b10d15": (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent)(() => __webpack_require__.e(/* import() | v-79b10d15 */ 271).then(__webpack_require__.bind(__webpack_require__, 321))),
-  // path: /ErrorCollect.html
-  "v-5bbfe21e": (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent)(() => __webpack_require__.e(/* import() | v-5bbfe21e */ 795).then(__webpack_require__.bind(__webpack_require__, 794))),
+  // path: /errorcollect.html
+  "v-67304e1e": (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent)(() => __webpack_require__.e(/* import() | v-67304e1e */ 126).then(__webpack_require__.bind(__webpack_require__, 685))),
   // path: /gitbook_build.html
   "v-1997c6e8": (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent)(() => __webpack_require__.e(/* import() | v-1997c6e8 */ 389).then(__webpack_require__.bind(__webpack_require__, 6))),
   // path: /Java.html
@@ -1266,7 +1266,7 @@ var Vuepress = __webpack_require__(663);
 
 const routeItems = [
   ["v-79b10d15","/Elasticsearch.html","",["/Elasticsearch","/Elasticsearch.md"]],
-  ["v-5bbfe21e","/ErrorCollect.html","Vue",["/ErrorCollect","/ErrorCollect.md"]],
+  ["v-67304e1e","/errorcollect.html","Vue",["/errorcollect","/errorcollect.md"]],
   ["v-1997c6e8","/gitbook_build.html","",["/gitbook_build","/gitbook_build.md"]],
   ["v-40ed10fe","/Java.html","Java",["/Java","/Java.md"]],
   ["v-7522d784","/Linux.html","Linux",["/Linux","/Linux.md"]],
@@ -1657,8 +1657,8 @@ var external_vue_ = __webpack_require__(666);
 const pagesData = {
   // path: /Elasticsearch.html
   "v-79b10d15": () => __webpack_require__.e(/* import() | v-79b10d15 */ 271).then(__webpack_require__.bind(__webpack_require__, 521)).then(({ data }) => data),
-  // path: /ErrorCollect.html
-  "v-5bbfe21e": () => __webpack_require__.e(/* import() | v-5bbfe21e */ 795).then(__webpack_require__.bind(__webpack_require__, 281)).then(({ data }) => data),
+  // path: /errorcollect.html
+  "v-67304e1e": () => __webpack_require__.e(/* import() | v-67304e1e */ 126).then(__webpack_require__.bind(__webpack_require__, 798)).then(({ data }) => data),
   // path: /gitbook_build.html
   "v-1997c6e8": () => __webpack_require__.e(/* import() | v-1997c6e8 */ 389).then(__webpack_require__.bind(__webpack_require__, 683)).then(({ data }) => data),
   // path: /Java.html
